@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Headphone</title>
+		<link rel="icon" href="../assets/images/icon.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<link href="../assets/css/ATH-CKR70.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="navvi">
+				<a href="../index.html"><img src="../assets/images/headphone.png" class="headphone"></a>			
+				<a href="all.html" class="title"><div class="all">All</div></a>
+				<a href="sony.html" class="title"><div class="all">Sony</div></a>
+				<a href="audio-technica.html" class="title"><div class="all">Audio-Technica</div></a>
+				<a href="akg.html" class="title"><div class="all">AKG</div></a>
+				<a href="sennheiser.html" class="title"><div class="all">SENNHEISER</div></a>
+				<div class="search">
+					<form action="" method="post">
+						<input type="search" name="search" placeholder=" 搜尋" class="inputsearch">
+						<button type="submit"><img src="../assets/images/search.png"></button>
+					</form>
+				</div>
+				<div class="user">
+					<a href="#" onclick="document.getElementById('id01').style.display='block'" class="login"><img src="../assets/images/user.png">會員登入</a>
+					<a href="#" onclick="document.getElementById('id02').style.display='block'" class="enroll">註冊</a>
+					<a href="shoppingcart.html" class="shop">購物車</a>
+				</div>
+				<div id="id01" class="modal">
+					<form class="modal-content animate" action="check.jsp" method="post">
+						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="關閉">&times;</span>
+						<div class="loginbox">
+							<p>會員登入</p>
+							<input type="text" placeholder="會員名稱/帳號" name="uname">
+							<input type="password" placeholder="密碼" name="psw">
+						</div>
+						<div class="loginbox" style="background-color:#f1f1f1">
+							<button type="submit" class="login">登入</button>
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取消</button>
+						</div>
+					</form>
+				</div>
+				<div id="id02" class="modal">
+					<form class="modal-content animate" action="" method="post">
+						<span onclick="document.getElementById('id02').style.display='none'" class="close" title="關閉">&times;</span>
+						<div class="loginbox">
+							<p class="title">會員註冊</p>
+							<input type="text" placeholder="會員名稱/帳號" name="username">
+							<input type="password" placeholder="密碼" name="password">
+							<p class="gender">性別 :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="male" checked>男
+								<input type="radio" name="gender" value="female">女</p>
+								<input type="text" placeholder="電子郵件" name="email">
+								<input type="text" placeholder="電話" name="tel">
+								<input type="text" placeholder="地址" name="addr">
+							</div>
+							<div class="loginbox" style="background-color:#f1f1f1">
+								<button type="submit" class="login">註冊</button>
+								<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">取消</button>
+							</div>
+						</form>
+					</div>
+					<script>
+					var modal = document.getElementById('id01');
+					window.onclick = function(event) {
+					if (event.target == modal) {
+					modal.style.display = "none";
+					}
+					}
+					</script>
+				</div>
+			</header>
+			<div class="content">
+				<div class="L1">
+					<img src="../assets/images/ATH-CKR70.jpg" class="hot"><br>
+				</div>
+				<div class=R1>
+					<h3>ATH-CKR70耳塞式耳機-黑色</h3><br>
+					<p>◆專用設計的高音質φ11.8mm單體</p>
+					<p>◆採用輕量化的鋁金屬機殼</p>
+					<p>◆提供Hi-Res音源的高解析度播放</p>
+					<p>◆全新設計機殼，使新設計之驅動單元得以完整發揮實力</p>
+					<p>◆兼顧佩戴舒適性及高密閉感</p><br>
+						<div class="L2">
+							<h2>產品規格</h2>
+							<p>重量:  約8g</p>
+							<p>阻抗 (OHM):  19 歐姆-</p>
+							<p>頻率響應:  4～40,000Hz</p>
+							<p>電池續航力:  -</p>
+							<p>BLUETOOTH® 版本:  -</p>
+							
+							
+						</div>
+					<p class="price">價錢 : $3880 </p>
+					<p>數量:
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option >3</option>
+							<option >4</option>
+							<option >5</option>
+							<option >6</option>
+							<option >7</option>
+							<option >8</option>
+							<option >9</option>
+							</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="s1" type="submit" value="加入購物車" /></p>
+
+						</div>
+					
+					</div>
+					
+					
+					<div class="content2">
+						<div class="ee">
+							<fieldset>
+								<legend>評價</legend>
+								<div class="rating">
+									<input type="radio" id="star5" name="rating" value="5" hidden/>
+									<label for="star5"></label>
+									<input type="radio" id="star4" name="rating" value="4" hidden/>
+									<label for="star4"></label>
+									<input type="radio" id="star3" name="rating" value="3" hidden/>
+									<label for="star3"></label>
+									<input type="radio" id="star2" name="rating" value="2" hidden/>
+									<label for="star2"></label>
+									<input type="radio" id="star1" name="rating" value="1" hidden/>
+									<label for="star1"></label>
+								</div>
+								<textarea name="" id="" cols="151" rows="10" style="padding-top: 5px;"></textarea>
+								<input type="button" value="確認送出" class="button1">
+							</fieldset>
+						</div>
+						<div class="ff">
+							<h1 align="center">商品評論</h1>
+							<table>
+								<tr class="gg">
+									<td style="padding-left: 30%;">name</td>
+									<td style="padding-left: 50%;">★★★★★</td>
+									<td style="padding-left: 70%;">帥</td>
+								</tr>
+								<tr class="gg">
+									<td style="padding-left: 30%;">name</td>
+									<td style="padding-left: 50%;">★★★★★</td>
+									<td style="padding-left: 70%;">帥</td>
+								</tr>
+								<tr class="gg">
+									<td style="padding-left: 30%;">name</td>
+									<td style="padding-left: 50%;">★★★★★</td>
+									<td style="padding-left: 70%;">帥</td>
+								</tr>
+								<tr class="gg">
+									<td style="padding-left: 30%;">name</td>
+									<td style="padding-left: 50%;">★★★★★</td>
+									<td style="padding-left: 70%;">帥</td>
+								</tr>
+								<tr class="gg">
+									<td style="padding-left: 30%;">name</td>
+									<td style="padding-left: 50%;">★★★★★</td>
+									<td style="padding-left: 70%;">帥</td>
+								</tr>
+								<tr class="gg">
+									<td style="padding-left: 30%;">name</td>
+									<td style="padding-left: 50%;">★★★★★</td>
+									<td style="padding-left: 70%;">帥</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</body>
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-3 center">
+								<a href="https://www.sony.com.tw/zh">SONY</a>
+							</div>
+							<div class="col-sm-3 center">
+								<a href="https://www.audio-technica.com.tw/">Audio-Technica</a>
+							</div>
+							<div class="col-sm-3 center">
+								<a href="https://tw.akg.com/">AKG</a>
+							</div>
+							<div class="col-sm-3 center">
+								<a href="https://zh-hk.sennheiser.com/headphones">SENNHEISER</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 center" style="margin-top:40px;">
+								<p>Copyright © 2020, All rights reserved</p>
+							</div>
+						</div>
+					</div>
+					
+				</footer>
+			</html>

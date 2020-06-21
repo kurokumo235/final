@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Headphone</title>
+	<link rel="icon" href="../assets/images/icon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<link href="../assets/css/sony.css" type="text/css" rel="stylesheet">
+	<script src="../assets/js/index.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<div class="navvi">
+			<a href="../index.html"><img src="../assets/images/headphone.png" class="headphone"></a>			
+			<a href="all.html" class="title"><div class="all">All</div></a>
+			<a href="sony.html" class="title"><div class="all">Sony</div></a>
+			<a href="audio-technica.html" class="title"><div class="all">Audio-Technica</div></a>
+			<a href="akg.html" class="title"><div class="all">AKG</div></a>
+			<a href="sennheiser.html" class="title"><div class="all">SENNHEISER</div></a>
+			<div class="search">
+				<form action="" method="post">
+					<input type="search" name="search" placeholder=" 搜尋" class="inputsearch">
+					<button type="submit"><img src="../assets/images/search.png"></button>
+				</form>
+			</div>
+			<div class="user">
+				<a href="#" onclick="document.getElementById('id01').style.display='block'" class="login"><img src="../assets/images/user.png">會員登入</a>
+				<a href="#" onclick="document.getElementById('id02').style.display='block'" class="enroll">註冊</a>
+				<a href="shoppingcart.html" class="shop">購物車</a>
+			</div>
+			<div id="id01" class="modal"> 
+			  <form class="modal-content animate" action="check.jsp" method="post">			   	
+			      	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="關閉">&times;</span>
+				    <div class="loginbox">
+				    	<p>會員登入</p>				   
+      					<input type="text" placeholder="會員名稱/帳號" name="uname">
+      					<input type="password" placeholder="密碼" name="psw">             					
+      				</div>				        
+				    <div class="loginbox" style="background-color:#f1f1f1">
+				    	<button type="submit" class="login">登入</button>
+      					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">取消</button>     					
+    				</div>				   			   
+			  </form>
+			</div>
+			<div id="id02" class="modal"> 
+			  <form class="modal-content animate" action="" method="post">			   	
+			      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="關閉">&times;</span>
+				    <div class="loginbox">
+				    	<p class="title">會員註冊</p>				   
+      					<input type="text" placeholder="會員名稱/帳號" name="username">
+      					<input type="password" placeholder="密碼" name="password">
+      					<p class="gender">性別 :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="male" checked>男
+      					<input type="radio" name="gender" value="female">女</p>
+      					<input type="text" placeholder="電子郵件" name="email">
+      					<input type="text" placeholder="電話" name="tel">
+      					<input type="text" placeholder="地址" name="addr">             					
+      				</div>				        
+				    <div class="loginbox" style="background-color:#f1f1f1">
+				    	<button type="submit" class="login">註冊</button>
+      					<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">取消</button>     					
+    				</div>				   			   
+			  </form>
+			</div>
+			<script>
+			var modal = document.getElementById('id01');
+			window.onclick = function(event) {
+    			if (event.target == modal) {
+        		modal.style.display = "none";
+    			}
+			}
+			</script>			
+		</div>
+	</header>
+	<div class="container">
+		<div class="banner">
+			<div class="row">
+				<div class="col-sm-12 center">
+					<img src="../assets/images/sony.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="items">商品列表</p>
+				<hr class="items">
+			</div>
+		</div>
+		<div class="goods">
+			<div class="row">
+				<div class="col-sm-4 center" style="margin:auto;">
+					<a href="IER-H500A.html" style="color:black;">
+					<img src="../assets/images/IER-H500A.jpg" class="hot">
+					<p class="hot1">IER-H500A h.ear in 2 入耳式耳機</p></a>
+				</div>
+				<div class="col-sm-4 center" style="margin:auto;">
+					<a href="SONY WF-H800.html" style="color:black;">
+					<img src="../assets/images/WF-H800.jpg" class="hot">
+					<p class="hot1">WF-H800 h.ear in 3 真無線耳機</p></a>
+				</div>
+				<div class="col-sm-4 center" style="margin:auto;">
+					<a href="WH-1000XM3.html" style="color:black;">
+					<img src="../assets/images/WH-1000XM3.jpg" class="hot">
+					<p class="hot1">WH-1000XM3 無線降噪耳機</p></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">			
+			<div class="row">
+				<div class="col-sm-3 center" style="margin-top:15px;">
+					<a href="https://www.sony.com.tw/zh">SONY</a>
+				</div>
+				<div class="col-sm-3 center" style="margin-top:15px;">
+					<a href="https://www.audio-technica.com.tw/">Audio-Technica</a>
+				</div>
+				<div class="col-sm-3 center" style="margin-top:15px;">
+					<a href="https://tw.akg.com/">AKG</a>
+				</div>
+				<div class="col-sm-3 center" style="margin-top:15px;">
+					<a href="https://zh-hk.sennheiser.com/headphones">SENNHEISER</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 center" style="margin-top:40px;">
+					<a href="pages/about.html"><p style="font-size:16px;">about us</p></a>
+				</div>
+				<div class="col-sm-6 center" style="margin-top:40px;">
+					<p style="font-size:16px;">瀏覽人數 : </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 center" style="margin-top:35px;">
+					<p>Copyright © 2020, All rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

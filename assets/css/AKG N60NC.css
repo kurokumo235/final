@@ -1,0 +1,272 @@
+body{
+font-family: 微軟正黑體;
+}
+.center{
+text-align: center;
+}
+img.headphone{
+width:80px;
+margin-left:50px;
+margin-top: 5px;
+float: left;
+}
+.navvi{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+text-align: center;
+box-shadow: 0px 0px 20px 4px rgba(0,0,0, 0.1);
+margin:auto;
+z-index: 100;
+background-color: white;
+}
+.all{
+float: left;
+width: 150px;
+height: 90px;
+background-color: white;
+font-size: 20px;
+text-align: center;
+line-height: 90px;
+}
+.all:hover{
+background-color: pink;
+}
+a.title{
+text-decoration: none;
+color: black;
+}
+.search{
+float: right;
+margin-right: 50px;
+margin-top: 10px;
+}
+.search img{
+width:20px;
+}
+.user{
+	position: absolute;
+	top:50px;
+	right: 3%;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+}
+.user img{
+	width: 20px;
+	margin-right: 10px;
+}
+a.login{
+	color: black;
+	margin-right: 15px;
+}
+a.enroll{
+	color: black;
+  margin-right: 15px;
+}
+a.logout{
+  color: black;
+  margin-right: 15px;
+}
+a.shop{
+  color: black;
+}
+input[type=text], input[type=password]{
+width: 80%;
+padding: 10px 16px;
+margin: 10px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+input[type=radio]{
+margin-right:20px;
+margin-left:20px;
+}
+.modal button{
+background-color: #4CAF50;
+color: white;
+padding: 8px 45px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+border-radius: 30px;
+}
+button:hover{
+opacity: 0.8;
+}
+button.cancelbtn{
+float: right;
+margin-right: 30px;
+width: auto;
+background-color: #f44336;
+}
+button.login{
+float: left;
+margin-left: 30px;
+width: auto;
+background-color: #f44336;
+}
+.modal{
+display: none;
+position: fixed;
+z-index: 1000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.4);
+padding-top: 60px;
+}
+.modal-content{
+font-family: "微軟正黑體";
+background-color: #fefefe;
+margin: 5% auto 10% auto;
+border: 1px solid #888;
+width: 20%;
+}
+.loginbox {
+margin-top: 30px;
+padding: 12px;
+}
+p.title{
+font-size: 24px;
+}
+p.gender{
+font-size: 16px;
+margin-top:10px;
+}
+span.close{
+position: absolute;
+right: 10px;
+top: 0;
+color: #000000;
+font-size: 35px;
+font-weight: bold;
+}
+span.close:hover,
+span.close:focus{
+color: red;
+cursor: pointer;
+}
+.animate{
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+.content{
+width: 70%;
+margin: 150px auto;
+height: 600px;
+padding: 20px;
+}
+.L1{
+margin-top:20px;
+width:45%;
+float: left;
+}
+.R1{
+width:50%;
+float: right;
+margin-right: 30px;
+font-size: 18px;
+}
+.L1.img{
+width:100px;
+height:80px;
+}
+footer{
+	margin-top:100px;
+	background-color: #777777;
+	height:180px;
+	color: #EFEFEF;
+	padding: 40px;
+	font-size: 14px;
+	font-family: "微軟正黑體";
+}
+footer a{
+	color: #EFEFEF;
+}
+img.hot{
+width:90%;
+}
+.ff{
+margin-top: 1%;
+width: 100%;
+background-color: #AAAAAA;
+border-radius: 5px;
+text-align: center;
+}
+.gg{
+padding-top: 5px;
+font-size: 20px;
+}
+.ee{
+}
+.rating {
+font-size: 0;
+display: table;
+}
+.rating > label {
+color: #ddd;
+float: right;
+}
+.rating > label:before {
+padding: 5px;
+font-size: 40px;
+line-height: 1em;
+display: inline-block;
+content: "★";
+}
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+color: #FFD700;
+}
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+opacity: 0.5;
+}
+.content2{
+width: 70%;
+margin: 150px auto;
+height: 600px;
+padding: 50px;
+}
+.button1{
+border-radius: 5px;
+background-color: gray;
+width: 100px;
+height: 30px;
+margin-left: 550px;
+}
+.price{
+margin-top: 5%;
+font-size: 18px;
+font-weight: bold;
+}
+#s1{
+text-align: center;
+border:1px solid #666;
+background-color:#AAA;
+padding: 7px 25px;
+font-size: 14px;
+color:#111;
+}
+.L2{
+width: 45%
+font-size: large;
+font-weight: bold;
+text-align: left;
+}
